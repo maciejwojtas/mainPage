@@ -4,6 +4,8 @@ var $top =  $("article").offset().top;
 
  
 $(".arrow").on("click", function () {
+    size()
+
     if(s<$top/2){
 
         $("html").animate( {scrollTop: $top},1000);

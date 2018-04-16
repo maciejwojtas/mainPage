@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+</head>
+
+<body>
+    <div id="commentBox">
+    <label>nazwa</label>
+    <input type="text" name="name" required>
+
+    <label>komentarz</label>
+         <textarea cols="20" rows="2"  name="comment" required></textarea>
+    <button>dodaj</button>
+                            <div id="commentPrep"></div>
+        <form action="comments.php" method="post">
+            <input type="text" id="jp" name="textPHP"/>
+            <input type="submit" value="dodaj"/>
+        </form>
+        <div id="comments"></div>
+        </div>
+        
+    
+
+
+</body>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="comments.js"></script>
+      
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

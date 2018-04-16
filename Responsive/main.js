@@ -204,11 +204,7 @@ $("#description").text("Animowana galeria zdjęć")
     $("#description").append("<a href="+"photos.html"+">Przejdź</a>")
     
 })
-
-
-
-   
-
+ 
 
 
 

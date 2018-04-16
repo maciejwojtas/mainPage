@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
       box-sizing: border-box;
+            font-family: 'Kalam', cursive;
+
+    
 }
     html { font-size: 62.5%; } 
 
 header{
     background: url(/img/bg.jpg) center 70%;
-    height: 90vh;
+   height: 90vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -140,7 +143,9 @@ p{
   
     
 }
-button{
+
+
+.left{
     display: inline-block;
     position: absolute;
     z-index: 1000;
@@ -149,18 +154,28 @@ button{
     font-size: 3rem;
     transform: translateY(-50%);
 
-}
-button:hover{
-    font-size: 3.5rem;
-    color: orangered;
-}
-.left{
         left: 1vw;
 
 }
 .right{
+    display: inline-block;
+    position: absolute;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    transform: translateY(-50%);
+
         right: 1vw;
 
+}
+.right:hover{
+    font-size: 3.5rem;
+    color: orangered;
+}
+.left:hover{
+    font-size: 3.5rem;
+    color: orangered;
 }
 
 .bg{
@@ -245,18 +260,16 @@ header h2{
 #description a{
     color: black;
 }
-.row{
+form{
                 font-family: 'Permanent Marker', cursive;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3vh;
     color: white;
     font-size: 1.5rem;
 }
 #contact{
-    padding-top: 10vh;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -268,7 +281,74 @@ header h2{
     justify-content: center;
     align-items:center;
     transform: translateY(-50%) translateX(-50%);
+    padding-bottom: 10vh;
 }
+.submit-button{
+    background: none;
+        color: white;
+                    font-family: 'Permanent Marker', cursive;
+
+    font-size: 2rem;
+border: none;
+}
+.submit-button:hover{
+transform: translateX(-10px);
+    color: yellow;
+    cursor: pointer;
+}
+form div{
+    padding-left: 50px;
+}
+#commentBox{
+    margin: 0 auto;
+        transform: translateY(15vh);
+    padding-top: vh;
+    width: 30vw;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    
+}
+.add-comment{
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+
+.add-comment:hover{
+    color: orangered;
+    cursor: pointer;
+    transform: translateX(10px);
+
+    
+}
+#comments{
+    padding-top: 5vh;
+}
+#comments div{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    text-align: left;
+
+}
+#comments h{
+    display: block;
+    margin: 2vw;
+    border: 5px solid lightyellow;
+border-radius: 20%;
+    font-size: 1.5rem;
+    background-color: lightyellow;
+    text-align: left;
+    
+
+}
+
 
 
 
@@ -295,6 +375,12 @@ header h2{
     }
       .bg{
     } 
+     #commentBox{
+    width: 50vw;
+    
+ 
+    
+    }
 
     
 }
@@ -314,13 +400,22 @@ font-size: 2rem;
     }
     .bg{
     } 
+    #commentBox{
+    width: 70vw;
     
  
     
+    }
 }
 @media (max-width: 360px){
     p{
         font-size: 1.2rem;
+    }
+      #commentBox{
+    width: 90vw;
+    
+ 
+    
     }
  
     
@@ -346,6 +441,7 @@ padding: 0 1vw;
     }
 
 }
+
 
 
 

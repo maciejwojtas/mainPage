@@ -17,40 +17,28 @@
         <nav class="enter"><i id="menu" class="fa fa-bars close"></i><nav class="panel"><a href="index.html">Główna</a><a href="projects.html">Projekty</a><a href="contact.html">Kontakt</a><a href="comments.html">Komentarze</a></nav>
         </nav>
         <hgroup>
-        <h1>Kontakt</h1>
-        <h2><a  STYLE="margin-top: 5vh">WYŚLIJ WIADOMOŚĆ</a></h2>
-        <h3><a STYLE="margin-top: 5vh;">ZADZWOŃ</a></h3>
+        <h1>Komentarze</h1>
 
    </hgroup>
         
-          <div id="contact">
-                                   
-              <a style="font-size: 2.5rem;"><i class="fa fa-arrow-left"></i></a>
-
- <form method="post" name="contact" action="contactengine.php">
-				<label for="Name">Podpis:</label>
-				<input type="text" name="Name" id="Name" required/>
-				
-				<label for="Email">Email:</label>
-				<input type="Email" name="Email" id="Email" required />
-				
-				<label for="Message">Wiadomość:</label><br />
-				<textarea name="Message" rows="5" cols="35" id="Message" required></textarea>
-
-				<input type="submit" name="submit" value="Wyślij" class="submit-button" />
-                  
-
-			</form>
-    </div>
-        
-    
-    
-    
-    
-    
     </header>
+      <div id="commentBox">
+    <label>Podpis:</label>
+    <input type="text" name="name" required>
+
+    <label>komentarz:</label>
+         <textarea cols="20" rows="2"  name="comment" required></textarea>
+    <button class="add-comment">dodaj komentarz</button>
+        <div id="commentPrep"></div>
+        <form action="comments.php" method="post">
+        <input type="text" id="jp" name="textPHP"/>
+        <input type="submit" value="dodaj"/>
+        </form>
+        <div id="comments"></div>
+        </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-    <script src="contact.js"></script>
+    <script src="menu.js"></script>
+    <script src="comments.js"></script>
     </body>
 </html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="">
